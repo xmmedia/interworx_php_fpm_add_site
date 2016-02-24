@@ -1,6 +1,6 @@
 #!/bin/sh
 # Usage:
-#   ./add_php_fpm.sh example example.com
+#   sudo ./add_php_fpm.sh example example.com
  
 USERNAME=$1
 DOMAIN=$2
