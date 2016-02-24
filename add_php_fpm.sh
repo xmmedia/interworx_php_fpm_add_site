@@ -34,3 +34,7 @@ EOF
 # enable module for vhost
 sed -i "/# php: default/i \
   \  # php-fpm config (custom)\n  <IfModule mod_fastcgi.c>\n    Alias \/php.fcgi \/dev\/shm\/$USERNAME-php.fcgi\n  <\/IfModule>\n" /etc/httpd/conf.d/vhost_$DOMAIN.conf
+
+echo "Restart PHP-FPM & Apache\nservice php-fpm restart && service httpd restart"
+
+exit 0
