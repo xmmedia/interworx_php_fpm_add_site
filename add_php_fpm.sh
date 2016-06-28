@@ -26,7 +26,7 @@ listen.group = apache
 listen.mode = 0660
 user = $USERNAME
 pm = ondemand
-# (2 x the number of processors in the server)
+; (2 x the number of processors in the server)
 pm.max_children = 4
 pm.max_requests = 1024
 EOF
